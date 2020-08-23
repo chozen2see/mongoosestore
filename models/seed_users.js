@@ -3,18 +3,18 @@ module.exports = [
     username: 'chozen',
     activeSession: false,
     shopping_cart: [
-      {
-        _id: '5ea8c2a51fee3c7a992e4b60',
-        name: 'Be-YOU-tiful Bronzer Beads',
-        price: 17,
-        qty: 1,
-      },
-      {
-        _id: '5ea8c2a51fee3c7a992e4b62',
-        name: 'Mongoose Mini Make-up Set',
-        price: 34,
-        qty: 1,
-      },
+      // {
+      //   _id: '5ea8c2a51fee3c7a992e4b60',
+      //   name: 'Be-YOU-tiful Bronzer Beads',
+      //   price: 17,
+      //   qty: 1,
+      // },
+      // {
+      //   _id: '5ea8c2a51fee3c7a992e4b62',
+      //   name: 'Mongoose Mini Make-up Set',
+      //   price: 34,
+      //   qty: 1,
+      // },
     ],
   },
   {

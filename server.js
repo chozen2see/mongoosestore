@@ -26,7 +26,7 @@ let currentUser;
  **********************/
 
 const mongoose = require('mongoose');
-const mongoURI = process.env.MONGODB_URL || 'mongodb://localhost:27017/mongoosestore';
+const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/mongoosestore';
 
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 mongoose.connection.once('open', () => {

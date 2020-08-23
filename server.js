@@ -7,8 +7,9 @@
 const express = require('express');
 const app = express();
 const methodOverride = require('method-override');
+require('dotenv').config();
 
-const PORT = 3000;
+// const PORT = 3000;
 
 // DATA
 const seedData = require('./models/seed_products.js');
@@ -35,6 +36,8 @@ mongoose.connection.once('open', () => {
 /**********************
  * Middleware
  **********************/
+
+
 
 // gives us acces to req.body
 app.use(express.urlencoded({ extended: false }));
@@ -324,6 +327,6 @@ app.delete('/user/cart/:userid/:productid', (req, res) => {
  * Event Listeners
  ********************/
 
-app.listen(PORT, () => {
-  console.log('Server Ready on port', PORT);
+app.listen(process.env.PORT || 3000, () => {
+  console.log('Server Ready on port', process.env.PORT);
 });

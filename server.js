@@ -323,6 +323,10 @@ app.delete('/user/cart/:userid/:productid', (req, res) => {
   );
 });
 
+app.get('*', (req, res) => {
+  res.redirect('/store');
+})
+
 /********************
  * Event Listeners
  ********************/
